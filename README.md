@@ -15,7 +15,7 @@
      https://github.com/ReactiveX/rxjs/blob/master/doc/writing-marble-tests.md for hot, cold observable
      https://github.com/ngrx/platform/blob/master/docs/effects/testing.md for testing metadata
      
-     <br>
+<br>
      
      Steps:
        1. `create first action`
@@ -34,9 +34,12 @@
 
   *  Notice: Testing Actions `without` TestBed
      Steps:
+<br>
          1. Create the action
          2. Check type and payload of actions equal to the action you created
+<br>         
        For Example:
+<br>       
          `
          const action = new fromUsers.LoadUser();
          expect({ ...action }).toEqual({ type: fromUsers.LOAD_USER });
