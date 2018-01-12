@@ -33,10 +33,11 @@
 # Testing with Actions
 
   *  Notice: Testing Actions `without` TestBed
-     Steps:
-     `1. Create the action
-      2. Check type and payload of actions equal to the action you created`
-      For Example:
+<br>
+    Steps:
+       1. `Create the action`
+       2. `Check type and payload of actions equal to the action you created`
+    For Example:
        
          `const action = new fromUsers.LoadUser();
          expect({ ...action }).toEqual({ type: fromUsers.LOAD_USER });
