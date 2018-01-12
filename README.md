@@ -11,14 +11,13 @@ What environment I am using:
     "@ngrx/store": "^4.1.0"
     "jasmine-core": "~2.6.2",
     "@nrwl/nx": "0.5.1",
-
+    and Angular 5
 What things you need to know 
 
-```
      https://github.com/vsavkin/testing_ngrx_effects testing NgRx Effects without TestBed
      https://github.com/ReactiveX/rxjs/blob/master/doc/writing-marble-tests.md for hot, cold observable
      https://github.com/ngrx/platform/blob/master/docs/effects/testing.md for testing metadata
-```
+
 
 ### Installing
 
@@ -39,11 +38,6 @@ End with an example of getting some data out of the system or using it for a lit
 
   
    *  Notice: Testing for Effects should create stub services for all inject service `without` TestBed
-      Take a look with
-     https://github.com/vsavkin/testing_ngrx_effects testing NgRx Effects without TestBed
-     https://github.com/ReactiveX/rxjs/blob/master/doc/writing-marble-tests.md for hot, cold observable
-     https://github.com/ngrx/platform/blob/master/docs/effects/testing.md for testing metadata
-     
      
      Steps:
        1. create first action
@@ -79,3 +73,6 @@ End with an example of getting some data out of the system or using it for a lit
           2. check values in state are right after action dispatched
 
 
+
+
+# Keep Updating Example later on
