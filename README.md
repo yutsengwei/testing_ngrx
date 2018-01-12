@@ -1,6 +1,8 @@
 # How you Test ngRx
   This repository is for testing of effects, actions, reducers.
   
+  Keep Updating Example later on
+  
 ## Getting Started
 
 These instructions will get you some samples of the project up. Basically You DON'T need to use TestBed with those test cases.
@@ -73,6 +75,3 @@ End with an example of getting some data out of the system or using it for a lit
           2. check values in state are right after action dispatched
 
 
-
-
-# Keep Updating Example later on
