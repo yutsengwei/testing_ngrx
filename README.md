@@ -44,3 +44,13 @@
          const action = new fromUsers.LoadUser();
          expect({ ...action }).toEqual({ type: fromUsers.LOAD_USER });
       
+
+# Testing with Reducers
+
+   *  Notice: Testing for reducers without TestBed
+
+<br>
+
+    Steps:
+          1. create action with parameter if needs and call reduce function with initial state and action
+          2. check values in state are right after action dispatched
