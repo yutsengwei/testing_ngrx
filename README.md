@@ -9,11 +9,14 @@
 # Testing Effects
 
   
-   *  Notice: Testing for Effects should create stub services for all inject service without TestBed
+   *  Notice: Testing for Effects should create stub services for all inject service `without` TestBed
       Take a look with
      https://github.com/vsavkin/testing_ngrx_effects testing NgRx Effects without TestBed
      https://github.com/ReactiveX/rxjs/blob/master/doc/writing-marble-tests.md for hot, cold observable
      https://github.com/ngrx/platform/blob/master/docs/effects/testing.md for testing metadata
+     
+     <br>
+     
      Steps:
        1. `create first action`
        2. `make it a new actions which return a observable`
@@ -27,3 +30,14 @@
        2. `check the effects return a wrong action that you expected`
        3. `the metadata of an effect (dispatch attribute: true or not)`
    
+# Testing with Actions
+
+  *  Notice: Testing Actions `without` TestBed
+     Steps:
+         1. Create the action
+         2. Check type and payload of actions equal to the action you created
+       For Example:
+         `
+         const action = new fromUsers.LoadUser();
+         expect({ ...action }).toEqual({ type: fromUsers.LOAD_USER });
+         `
