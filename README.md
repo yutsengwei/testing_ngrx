@@ -18,17 +18,17 @@
 <br>
      
      Steps:
-       1. `create first action`
-       2. `make it a new actions which return a observable`
-       3. `create expected action`
-       4. `make expected action to another observable`
-       5. `create effrects service with stub service and action`
-       6. `check the specific effect return the same structure obsersable`
+       1. create first action
+       2. make it a new actions which return a observable
+       3. create expected action
+       4. make expected action to another observable
+       5. create effrects service with stub service and action
+       6. check the specific effect return the same structure obsersable
    
      There are two parts you should test
-       1. `check the effects return a right action that you expected`
-       2. `check the effects return a wrong action that you expected`
-       3. `the metadata of an effect (dispatch attribute: true or not)`
+       1. check the effects return a right action that you expected
+       2. check the effects return a wrong action that you expected
+       3. the metadata of an effect (dispatch attribute: true or not)
    
 # Testing with Actions
 
@@ -37,10 +37,10 @@
 <br>
 
     Steps:
-       1. `Create the action`
-       2. `Check type and payload of actions equal to the action you created`
+       1. Create the action
+       2. Check type and payload of actions equal to the action you created
   For Example:
        
-         `const action = new fromUsers.LoadUser();
+         const action = new fromUsers.LoadUser();
          expect({ ...action }).toEqual({ type: fromUsers.LOAD_USER });
-         `
+      
