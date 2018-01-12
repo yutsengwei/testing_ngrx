@@ -34,13 +34,12 @@
 
   *  Notice: Testing Actions `without` TestBed
      Steps:
-<br>
+     `
          1. Create the action
-         2. Check type and payload of actions equal to the action you created
-<br>         
+         2. Check type and payload of actions equal to the action you created       
        For Example:
-<br>       
-         `
+       
+         
          const action = new fromUsers.LoadUser();
          expect({ ...action }).toEqual({ type: fromUsers.LOAD_USER });
          `
